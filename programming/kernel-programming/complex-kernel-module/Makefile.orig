@@ -1,0 +1,20 @@
+KMOD=mymodule
+EXTRA_CFLAGS = -I $(PWD)/header
+obj-m += ${KMOD}.o
+SRCS=main.c def.c
+VPATH:=$(PWD)/../complex-kernel-module/main $(PWD)/def
+#${KMOD}-objs:=main/main.o def/def.o
+final_files:=$(foreach SRC, ${SRCS},$(foreach DIR_PATH, ${VPATH}, $(wildcard ${DIR_PATH}/${SRC})))
+final_files:=$(foreach objs, ${final_files},$(shell realpath --relative-to=$(PWD) ${objs}))
+moduleobjs:=$(subst .c,.o,${final_files})
+moduleobjs:=$(subst .S,.o,${moduleobjs})
+moduleobjs:=$(shell echo ${moduleobjs} | tr -s ' ' )
+${KMOD}-objs:=${moduleobjs}
+
+
+all:
+	echo ${moduleobjs}
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+
+clean:
+	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean

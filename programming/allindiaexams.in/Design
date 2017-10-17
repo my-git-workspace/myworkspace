@@ -1,0 +1,24 @@
+
+
+allindiaexams.in
+
+url='http://www.allindiaexams.in/engineering/cse/c-multiple-choice-questions-answers'
+
+
+AllIndiaExamsQue{
+	Topics topics[]
+}
+
+class Topics{
+	Questions que[]	
+}
+
+class Question{
+	Parse 
+}
+
+
+Class ParseQue{
+	
+}
+
