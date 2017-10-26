@@ -9,3 +9,5 @@ load:
 	sudo insmod sample_driver.ko
 unload:
 	sudo rmmod sample_driver
+mknod:
+	sudo mknod -m 0666 /dev/mycdev c ${MAJOR} 0
