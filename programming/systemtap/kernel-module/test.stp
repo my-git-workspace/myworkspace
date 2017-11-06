@@ -1,0 +1,3 @@
+probe module("module1").function("*") {
+ printf("%s was called from somewhere \n", probefunc());
+ } 

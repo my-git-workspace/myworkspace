@@ -1,0 +1,3 @@
+probe module("zfs").function("*") {
+ 	printf("%s was called\n", probefunc());
+ } 

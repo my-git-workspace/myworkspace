@@ -1,0 +1,4 @@
+probe module("hello_module").function("*"){
+	printf("%s called\n",probefunc());
+}
+
