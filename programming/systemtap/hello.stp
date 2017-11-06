@@ -1,0 +1,7 @@
+probe begin{
+	printf("hello world\n")
+	exit()
+}
+probe end{
+	printf("hello world finished\n")
+}
