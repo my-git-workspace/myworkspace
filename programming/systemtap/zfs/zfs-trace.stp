@@ -1,3 +1,7 @@
 probe module("zfs").function("*") {
- 	printf("%s was called\n", probefunc());
+	if ( probefunc() == "dsl_dataset_create_sync_dd" || probefunc() == "dsl_props_set_check" || probefunc() == "dmu_tx_assign")	
+		;
+	else
+ 		printf("%s was called\n", probefunc());
+	
  } 
