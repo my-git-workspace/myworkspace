@@ -1,0 +1,367 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AI_ADDRCONFIG	c.h	267;"	d
+ARRAY_SIZE	c.h	89;"	d
+BUILD_BUG_ON_NULL	c.h	86;"	d
+CFLAGS	Makefile	/^CFLAGS=${PKG}$/;"	m
+COL_ALIOFF	lsblk.c	/^	COL_ALIOFF,$/;"	e	enum:__anon1	file:
+COL_DALIGN	lsblk.c	/^	COL_DALIGN,$/;"	e	enum:__anon1	file:
+COL_DGRAN	lsblk.c	/^	COL_DGRAN,$/;"	e	enum:__anon1	file:
+COL_DMAX	lsblk.c	/^	COL_DMAX,$/;"	e	enum:__anon1	file:
+COL_DZERO	lsblk.c	/^	COL_DZERO,$/;"	e	enum:__anon1	file:
+COL_FSTYPE	lsblk.c	/^	COL_FSTYPE,$/;"	e	enum:__anon1	file:
+COL_GROUP	lsblk.c	/^	COL_GROUP,$/;"	e	enum:__anon1	file:
+COL_HCTL	lsblk.c	/^	COL_HCTL,$/;"	e	enum:__anon1	file:
+COL_HOTPLUG	lsblk.c	/^	COL_HOTPLUG,$/;"	e	enum:__anon1	file:
+COL_KNAME	lsblk.c	/^	COL_KNAME,$/;"	e	enum:__anon1	file:
+COL_LABEL	lsblk.c	/^	COL_LABEL,$/;"	e	enum:__anon1	file:
+COL_LOGSEC	lsblk.c	/^	COL_LOGSEC,$/;"	e	enum:__anon1	file:
+COL_MAJMIN	lsblk.c	/^	COL_MAJMIN,$/;"	e	enum:__anon1	file:
+COL_MINIO	lsblk.c	/^	COL_MINIO,$/;"	e	enum:__anon1	file:
+COL_MODE	lsblk.c	/^	COL_MODE,$/;"	e	enum:__anon1	file:
+COL_MODEL	lsblk.c	/^	COL_MODEL,$/;"	e	enum:__anon1	file:
+COL_NAME	lsblk.c	/^	COL_NAME = 0,$/;"	e	enum:__anon1	file:
+COL_OPTIO	lsblk.c	/^	COL_OPTIO,$/;"	e	enum:__anon1	file:
+COL_OWNER	lsblk.c	/^	COL_OWNER,$/;"	e	enum:__anon1	file:
+COL_PARTFLAGS	lsblk.c	/^	COL_PARTFLAGS,$/;"	e	enum:__anon1	file:
+COL_PARTLABEL	lsblk.c	/^	COL_PARTLABEL,$/;"	e	enum:__anon1	file:
+COL_PARTTYPE	lsblk.c	/^	COL_PARTTYPE,$/;"	e	enum:__anon1	file:
+COL_PARTUUID	lsblk.c	/^	COL_PARTUUID,$/;"	e	enum:__anon1	file:
+COL_PHYSEC	lsblk.c	/^	COL_PHYSEC,$/;"	e	enum:__anon1	file:
+COL_PKNAME	lsblk.c	/^	COL_PKNAME,$/;"	e	enum:__anon1	file:
+COL_RA	lsblk.c	/^	COL_RA,$/;"	e	enum:__anon1	file:
+COL_RAND	lsblk.c	/^	COL_RAND,$/;"	e	enum:__anon1	file:
+COL_REV	lsblk.c	/^	COL_REV,$/;"	e	enum:__anon1	file:
+COL_RM	lsblk.c	/^	COL_RM,$/;"	e	enum:__anon1	file:
+COL_RO	lsblk.c	/^	COL_RO,$/;"	e	enum:__anon1	file:
+COL_ROTA	lsblk.c	/^	COL_ROTA,$/;"	e	enum:__anon1	file:
+COL_RQ_SIZE	lsblk.c	/^	COL_RQ_SIZE,$/;"	e	enum:__anon1	file:
+COL_SCHED	lsblk.c	/^	COL_SCHED,$/;"	e	enum:__anon1	file:
+COL_SERIAL	lsblk.c	/^	COL_SERIAL,$/;"	e	enum:__anon1	file:
+COL_SIZE	lsblk.c	/^	COL_SIZE,$/;"	e	enum:__anon1	file:
+COL_STATE	lsblk.c	/^	COL_STATE,$/;"	e	enum:__anon1	file:
+COL_SUBSYS	lsblk.c	/^	COL_SUBSYS,$/;"	e	enum:__anon1	file:
+COL_TARGET	lsblk.c	/^	COL_TARGET,$/;"	e	enum:__anon1	file:
+COL_TRANSPORT	lsblk.c	/^	COL_TRANSPORT,$/;"	e	enum:__anon1	file:
+COL_TYPE	lsblk.c	/^	COL_TYPE,$/;"	e	enum:__anon1	file:
+COL_UUID	lsblk.c	/^	COL_UUID,$/;"	e	enum:__anon1	file:
+COL_VENDOR	lsblk.c	/^	COL_VENDOR,$/;"	e	enum:__anon1	file:
+COL_WSAME	lsblk.c	/^	COL_WSAME,$/;"	e	enum:__anon1	file:
+COL_WWN	lsblk.c	/^	COL_WWN,$/;"	e	enum:__anon1	file:
+COL_ZONED	lsblk.c	/^	COL_ZONED,$/;"	e	enum:__anon1	file:
+CXX	Makefile	/^	CXX=g++$/;"	m
+CXX	Makefile	/^	CXX=gcc$/;"	m
+CXX	Makefile	/^CXX=gcc$/;"	m
+DBG	lsblk.c	75;"	d	file:
+DBG	sysfs.c	24;"	d	file:
+EXE	Makefile	/^EXE=$(shell basename ${PWD})$/;"	m
+EXT	Makefile	/^	EXT=.c$/;"	m
+EXT	Makefile	/^EXT=$(shell echo ${SOURCE_FILES} | grep -o ".cpp")$/;"	m
+EXTPAT	Makefile	/^EXTPAT=%"${EXT}"$/;"	m
+FALSE	c.h	101;"	d
+FIRST_SOURCE_FILE	Makefile	/^FIRST_SOURCE_FILE=$(firstword ${SOURCE_FILES})$/;"	m
+F_DUPFD_CLOEXEC	c.h	261;"	d
+HAVE_USLEEP	c.h	298;"	d
+IUTF8	c.h	271;"	d
+LOGIN_NAME_MAX	c.h	29;"	d
+LSBLK_ASCII	lsblk.c	/^	LSBLK_ASCII =		(1 << 0),$/;"	e	enum:__anon2	file:
+LSBLK_DEBUG_ALL	lsblk.c	73;"	d	file:
+LSBLK_DEBUG_CXT	lsblk.c	72;"	d	file:
+LSBLK_DEBUG_DEV	lsblk.c	71;"	d	file:
+LSBLK_DEBUG_FILTER	lsblk.c	70;"	d	file:
+LSBLK_DEBUG_INIT	lsblk.c	69;"	d	file:
+LSBLK_EXIT_ALLFAILED	lsblk.c	80;"	d	file:
+LSBLK_EXIT_SOMEOK	lsblk.c	79;"	d	file:
+LSBLK_EXPORT	lsblk.c	/^	LSBLK_EXPORT =		(1 << 3),$/;"	e	enum:__anon2	file:
+LSBLK_JSON	lsblk.c	/^	LSBLK_JSON =		(1 << 5),$/;"	e	enum:__anon2	file:
+LSBLK_NOHEADINGS	lsblk.c	/^	LSBLK_NOHEADINGS =	(1 << 2),$/;"	e	enum:__anon2	file:
+LSBLK_RAW	lsblk.c	/^	LSBLK_RAW =		(1 << 1),$/;"	e	enum:__anon2	file:
+LSBLK_TREE	lsblk.c	/^	LSBLK_TREE =		(1 << 4),$/;"	e	enum:__anon2	file:
+MAP_ANONYMOUS	c.h	386;"	d
+OBJS	Makefile	/^	OBJS=$(patsubst %.c, %.o, ${SOURCE_FILES})$/;"	m
+OBJS	Makefile	/^	OBJS=$(patsubst %.cpp, %.o, ${SOURCE_FILES})$/;"	m
+ON_DBG	lsblk.c	76;"	d	file:
+O_CLOEXEC	c.h	256;"	d
+PATH_MAX	c.h	93;"	d
+PWD	Makefile	/^PWD=$(shell pwd)$/;"	m
+RM	Makefile	/^RM=rm$/;"	m
+SEEK_DATA	c.h	340;"	d
+SEEK_HOLE	c.h	343;"	d
+SG.MK	Makefile	/^SG.MK=${PWD}\/sg.mk$/;"	m
+SORT_STRING	lsblk.c	/^	SORT_STRING	= 0,	\/* default is to use scols_cell_get_data() *\/$/;"	e	enum:__anon3	file:
+SORT_U64	lsblk.c	/^	SORT_U64	= 1	\/* use private pointer from scols_cell_get_userdata() *\/$/;"	e	enum:__anon3	file:
+SOURCE_FILES	sg.mk	/^SOURCE_FILES = .\/test.c$/;"	m
+SUBSYSTEM_LINKNAME	sysfs.c	642;"	d	file:
+TRUE	c.h	97;"	d
+UL_ASAN_BLACKLIST	c.h	364;"	d
+UL_ASAN_BLACKLIST	c.h	366;"	d
+UL_ASAN_BLACKLIST	c.h	369;"	d
+UL_BUILD_BUG_ON_ZERO	c.h	85;"	d
+UL_CLOEXECSTR	c.h	250;"	d
+UL_CLOEXECSTR	c.h	252;"	d
+UL_CLOEXECSTR	sysfs.c	21;"	d	file:
+UL_GETPW_BUFSIZ	c.h	379;"	d
+UL_SCNsA	c.h	331;"	d
+UL_SCNsA	c.h	333;"	d
+UL_SYSFSCXT_EMPTY	sysfs.c	20;"	d	file:
+UL_SYSFSCXT_EMPTY	sysfs.h	34;"	d
+USAGE_HEADER	c.h	318;"	d
+USAGE_HELP	c.h	321;"	d
+USAGE_MAN_TAIL	c.h	323;"	d
+USAGE_OPTIONS	c.h	319;"	d
+USAGE_SEPARATOR	c.h	320;"	d
+USAGE_VERSION	c.h	322;"	d
+UTIL_LINUX_C_H	c.h	6;"	d
+UTIL_LINUX_SYSFS_H	sysfs.h	5;"	d
+UTIL_LINUX_VERSION	c.h	325;"	d
+_PATH_SYS_BLOCK	sysfs.c	23;"	d	file:
+_PATH_SYS_CLASS	sysfs.c	19;"	d	file:
+_PATH_SYS_DEVBLOCK	sysfs.c	22;"	d	file:
+_PATH_SYS_SCSI	sysfs.c	18;"	d	file:
+__GNUC_PREREQ	c.h	37;"	d
+__GNUC_PREREQ	c.h	40;"	d
+__attribute__	c.h	56;"	d
+__must_be_array	c.h	47;"	d
+__must_be_array	c.h	55;"	d
+__ul_alloc_size	c.h	65;"	d
+__ul_alloc_size	c.h	67;"	d
+__ul_calloc_size	c.h	73;"	d
+__ul_calloc_size	c.h	75;"	d
+add_column	lsblk.c	/^static inline void add_column(int id)$/;"	f	file:
+add_uniq_column	lsblk.c	/^static inline void add_uniq_column(int id)$/;"	f	file:
+all_devices	lsblk.c	/^	unsigned int all_devices:1;	\/* print all devices, including empty *\/$/;"	m	struct:lsblk	file:
+all_devices	test.c	/^	unsigned int all_devices:1;	\/* print all devices, including empty *\/$/;"	m	struct:lsblk	file:
+blkdev_cxt	lsblk.c	/^struct blkdev_cxt {$/;"	s	file:
+blkdev_cxt	test.c	/^struct blkdev_cxt {$/;"	s	file:
+bytes	lsblk.c	/^	unsigned int bytes:1;		\/* print SIZE in bytes *\/$/;"	m	struct:lsblk	file:
+bytes	test.c	/^	unsigned int bytes:1;		\/* print SIZE in bytes *\/$/;"	m	struct:lsblk	file:
+check_sysdevblock	lsblk.c	/^static void check_sysdevblock(void)$/;"	f	file:
+cmp_numbers	c.h	121;"	d
+cmp_u64_cells	lsblk.c	/^static int cmp_u64_cells(struct libscols_cell *a,$/;"	f	file:
+colinfo	lsblk.c	/^struct colinfo {$/;"	s	file:
+column_id_to_number	lsblk.c	/^static int column_id_to_number(int id)$/;"	f	file:
+column_name_to_id	lsblk.c	/^static int column_name_to_id(const char *name, size_t namesz)$/;"	f	file:
+columns	lsblk.c	/^static int columns[ARRAY_SIZE(infos) * 2];$/;"	v	file:
+container_of	c.h	133;"	d
+devno	sysfs.h	/^	dev_t	devno;$/;"	m	struct:sysfs_cxt
+devno_to_sysfs_name	lsblk.c	/^static char *devno_to_sysfs_name(dev_t devno, char *devname, char *buf, size_t buf_size)$/;"	f	file:
+dir_fd	sysfs.h	/^	int	dir_fd;		\/* \/sys\/block\/<name> *\/$/;"	m	struct:sysfs_cxt
+dir_path	sysfs.h	/^	char	*dir_path;$/;"	m	struct:sysfs_cxt
+dirfd	c.h	/^static inline int dirfd(DIR *d)$/;"	f
+discard	lsblk.c	/^	int discard;		\/* supports discard *\/$/;"	m	struct:blkdev_cxt	file:
+discard	test.c	/^	int discard;		\/* supports discard *\/$/;"	m	struct:blkdev_cxt	file:
+dm_name	lsblk.c	/^	char *dm_name;		\/* DM name (dm\/block) *\/$/;"	m	struct:blkdev_cxt	file:
+dm_name	test.c	/^	char *dm_name;		\/* DM name (dm\/block) *\/$/;"	m	struct:blkdev_cxt	file:
+dup_fd_cloexec	sysfs.c	/^int dup_fd_cloexec(int oldfd, int lowfd)$/;"	f
+err	c.h	194;"	d
+errmsg	c.h	/^errmsg(char doexit, int excode, char adderr, const char *fmt, ...)$/;"	f
+errtryh	c.h	219;"	d
+errtryhelp	c.h	213;"	d
+errx	c.h	198;"	d
+excludes	lsblk.c	/^static int excludes[256];$/;"	v	file:
+filename	lsblk.c	/^	char *filename;		\/* path to device node *\/$/;"	m	struct:blkdev_cxt	file:
+filename	test.c	/^	char *filename;		\/* path to device node *\/$/;"	m	struct:blkdev_cxt	file:
+fill_table_line	lsblk.c	/^static void fill_table_line(struct blkdev_cxt *cxt, struct libscols_line *scols_parent)$/;"	f	file:
+flags	lsblk.c	/^	int		flags;		\/* SCOLS_FL_* *\/$/;"	m	struct:colinfo	file:
+flags	lsblk.c	/^	int flags;			\/* LSBLK_* *\/$/;"	m	struct:lsblk	file:
+flags	test.c	/^	int flags;			\/* LSBLK_* *\/$/;"	m	struct:lsblk	file:
+force_tree_order	lsblk.c	/^	unsigned int force_tree_order:1;\/* sort lines by parent->tree relation *\/$/;"	m	struct:lsblk	file:
+force_tree_order	test.c	/^	unsigned int force_tree_order:1;\/* sort lines by parent->tree relation *\/$/;"	m	struct:lsblk	file:
+fstype	lsblk.c	/^	char *fstype;		\/* detected fs, NULL or "?" if cannot detect *\/$/;"	m	struct:blkdev_cxt	file:
+fstype	test.c	/^	char *fstype;		\/* detected fs, NULL or "?" if cannot detect *\/$/;"	m	struct:blkdev_cxt	file:
+get_column_id	lsblk.c	/^static int get_column_id(int num)$/;"	f	file:
+get_column_info	lsblk.c	/^static struct colinfo *get_column_info(int num)$/;"	f	file:
+get_device_mountpoint	lsblk.c	/^static char *get_device_mountpoint(struct blkdev_cxt *cxt)$/;"	f	file:
+get_device_path	lsblk.c	/^static char *get_device_path(struct blkdev_cxt *cxt)$/;"	f	file:
+get_dm_wholedisk	sysfs.c	/^static int get_dm_wholedisk(struct sysfs_cxt *cxt, char *diskname,$/;"	f	file:
+get_hostname_max	c.h	/^static inline size_t get_hostname_max(void)$/;"	f
+get_scheduler	lsblk.c	/^static char *get_scheduler(struct blkdev_cxt *cxt)$/;"	f	file:
+get_subsystem	sysfs.c	/^static char *get_subsystem(char *chain, char *buf, size_t bufsz)$/;"	f	file:
+get_subsystems	lsblk.c	/^static char *get_subsystems(struct blkdev_cxt *cxt)$/;"	f	file:
+get_transport	lsblk.c	/^static char *get_transport(struct blkdev_cxt *cxt)$/;"	f	file:
+get_type	lsblk.c	/^static char *get_type(struct blkdev_cxt *cxt)$/;"	f	file:
+get_udev_properties	lsblk.c	/^static int get_udev_properties(struct blkdev_cxt *cxt$/;"	f	file:
+get_udev_properties	lsblk.c	/^static int get_udev_properties(struct blkdev_cxt *cxt)$/;"	f	file:
+get_wholedisk_from_partition_dirent	lsblk.c	/^static int get_wholedisk_from_partition_dirent(DIR *dir,$/;"	f	file:
+has_hctl	sysfs.h	/^	unsigned int	has_hctl   : 1,$/;"	m	struct:sysfs_cxt
+hctl_error	sysfs.h	/^			hctl_error : 1 ;$/;"	m	struct:sysfs_cxt
+help	lsblk.c	/^	const char      *help;$/;"	m	struct:colinfo	file:
+help	lsblk.c	/^static void __attribute__((__noreturn__)) help(FILE *out)$/;"	f	file:
+ignore_result	c.h	50;"	d
+ignore_result	c.h	57;"	d
+includes	lsblk.c	/^static int includes[256];$/;"	v	file:
+infos	lsblk.c	/^static struct colinfo infos[] = {$/;"	v	typeref:struct:colinfo	file:
+inverse	lsblk.c	/^	unsigned int inverse:1;		\/* print inverse dependencies *\/$/;"	m	struct:lsblk	file:
+inverse	test.c	/^	unsigned int inverse:1;		\/* print inverse dependencies *\/$/;"	m	struct:lsblk	file:
+is_active_swap	lsblk.c	/^static int is_active_swap(const char *filename)$/;"	f	file:
+is_dm	lsblk.c	/^static int is_dm(const char *name)$/;"	f	file:
+is_hotpluggable_subsystem	sysfs.c	/^static int is_hotpluggable_subsystem(const char *name)$/;"	f	file:
+is_maj_excluded	lsblk.c	/^static int is_maj_excluded(int maj)$/;"	f	file:
+is_maj_included	lsblk.c	/^static int is_maj_included(int maj)$/;"	f	file:
+is_parsable	lsblk.c	813;"	d	file:
+is_power_of_2	c.h	/^static inline __attribute__((const)) int is_power_of_2(unsigned long num)$/;"	f
+is_readonly_device	lsblk.c	/^static int is_readonly_device(struct blkdev_cxt *cxt)$/;"	f	file:
+iterate_block_devices	lsblk.c	/^static int iterate_block_devices(void)$/;"	f	file:
+iterate_block_devices	test.c	/^static int iterate_block_devices(void)$/;"	f	file:
+label	lsblk.c	/^	char *label;		\/* filesystem label *\/$/;"	m	struct:blkdev_cxt	file:
+label	test.c	/^	char *label;		\/* filesystem label *\/$/;"	m	struct:blkdev_cxt	file:
+list_deps	lsblk.c	/^static int list_deps(struct blkdev_cxt *cxt)$/;"	f	file:
+list_partitions	lsblk.c	/^static int list_partitions(struct blkdev_cxt *wholedisk_cxt, struct blkdev_cxt *parent_cxt,$/;"	f	file:
+list_partitions	test.c	/^static int list_partitions(struct blkdev_cxt *wholedisk_cxt, struct blkdev_cxt *parent_cxt,$/;"	f	file:
+loff_t	c.h	/^typedef int64_t loff_t;$/;"	t
+lsblk	lsblk.c	/^UL_DEBUG_DEFINE_MASKNAMES(lsblk) = UL_DEBUG_EMPTY_MASKNAMES;$/;"	v
+lsblk	lsblk.c	/^static struct lsblk *lsblk;	\/* global handler *\/$/;"	v	typeref:struct:lsblk	file:
+lsblk	lsblk.c	/^struct lsblk {$/;"	s	file:
+lsblk	test.c	/^static struct lsblk *lsblk;	\/* global handler *\/$/;"	v	typeref:struct:lsblk	file:
+lsblk	test.c	/^struct lsblk {$/;"	s	file:
+lsblk_init_debug	lsblk.c	/^static void lsblk_init_debug(void)$/;"	f	file:
+main	lsblk.c	/^int main(int argc, char *argv[])$/;"	f
+main	sysfs.c	/^int main(int argc, char *argv[])$/;"	f
+main	test.c	/^int main(int argc, char *argv[]){$/;"	f
+maj	lsblk.c	/^	int maj, min;		\/* devno *\/$/;"	m	struct:blkdev_cxt	file:
+maj	test.c	/^	int maj, min;		\/* devno *\/$/;"	m	struct:blkdev_cxt	file:
+max	c.h	113;"	d
+min	c.h	105;"	d
+min	lsblk.c	/^	int maj, min;		\/* devno *\/$/;"	m	struct:blkdev_cxt	file:
+min	test.c	/^	int maj, min;		\/* devno *\/$/;"	m	struct:blkdev_cxt	file:
+mk_dm_name	lsblk.c	/^static char *mk_dm_name(const char *name)$/;"	f	file:
+mk_name	lsblk.c	/^static char *mk_name(const char *name)$/;"	f	file:
+mntcache	lsblk.c	/^static struct libmnt_cache *mntcache;$/;"	v	typeref:struct:libmnt_cache	file:
+mtab	lsblk.c	/^static struct libmnt_table *mtab, *swaps;$/;"	v	typeref:struct:libmnt_table	file:
+name	lsblk.c	/^	char *name;		\/* kernel name in \/sys\/block *\/$/;"	m	struct:blkdev_cxt	file:
+name	lsblk.c	/^	const char	*name;		\/* header *\/$/;"	m	struct:colinfo	file:
+name	test.c	/^	char *name;		\/* kernel name in \/sys\/block *\/$/;"	m	struct:blkdev_cxt	file:
+ncolumns	lsblk.c	/^static size_t ncolumns;$/;"	v	file:
+nexcludes	lsblk.c	/^static size_t nexcludes;$/;"	v	file:
+nholders	lsblk.c	/^	int nholders;		\/* # of devices mapped directly to this device$/;"	m	struct:blkdev_cxt	file:
+nholders	test.c	/^	int nholders;		\/* # of devices mapped directly to this device$/;"	m	struct:blkdev_cxt	file:
+nincludes	lsblk.c	/^static size_t nincludes;$/;"	v	file:
+nodeps	lsblk.c	/^	unsigned int nodeps:1;		\/* don't print slaves\/holders *\/$/;"	m	struct:lsblk	file:
+nodeps	test.c	/^	unsigned int nodeps:1;		\/* don't print slaves\/holders *\/$/;"	m	struct:lsblk	file:
+npartitions	lsblk.c	/^	int npartitions;	\/* # of partitions this device has *\/$/;"	m	struct:blkdev_cxt	file:
+npartitions	test.c	/^	int npartitions;	\/* # of partitions this device has *\/$/;"	m	struct:blkdev_cxt	file:
+nslaves	lsblk.c	/^	int nslaves;		\/* # of devices this device maps to *\/$/;"	m	struct:blkdev_cxt	file:
+nslaves	test.c	/^	int nslaves;		\/* # of devices this device maps to *\/$/;"	m	struct:blkdev_cxt	file:
+offsetof	c.h	129;"	d
+parent	lsblk.c	/^	struct blkdev_cxt *parent;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::blkdev_cxt	file:
+parent	sysfs.h	/^	struct sysfs_cxt *parent;$/;"	m	struct:sysfs_cxt	typeref:struct:sysfs_cxt::sysfs_cxt
+parent	test.c	/^	struct blkdev_cxt *parent;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::blkdev_cxt	file:
+parse_excludes	lsblk.c	/^static void parse_excludes(const char *str0)$/;"	f	file:
+parse_includes	lsblk.c	/^static void parse_includes(const char *str0)$/;"	f	file:
+partflags	lsblk.c	/^	char *partflags;	\/* partition flags *\/$/;"	m	struct:blkdev_cxt	file:
+partflags	test.c	/^	char *partflags;	\/* partition flags *\/$/;"	m	struct:blkdev_cxt	file:
+partition	lsblk.c	/^	int partition;		\/* is partition? TRUE\/FALSE *\/$/;"	m	struct:blkdev_cxt	file:
+partition	test.c	/^	int partition;		\/* is partition? TRUE\/FALSE *\/$/;"	m	struct:blkdev_cxt	file:
+partlabel	lsblk.c	/^	char *partlabel;	\/* partition label *\/$/;"	m	struct:blkdev_cxt	file:
+partlabel	test.c	/^	char *partlabel;	\/* partition label *\/$/;"	m	struct:blkdev_cxt	file:
+parttype	lsblk.c	/^	char *parttype;		\/* partition type UUID *\/$/;"	m	struct:blkdev_cxt	file:
+parttype	test.c	/^	char *parttype;		\/* partition type UUID *\/$/;"	m	struct:blkdev_cxt	file:
+partuuid	lsblk.c	/^	char *partuuid;		\/* partition UUID *\/$/;"	m	struct:blkdev_cxt	file:
+partuuid	test.c	/^	char *partuuid;		\/* partition UUID *\/$/;"	m	struct:blkdev_cxt	file:
+paths	lsblk.c	/^	unsigned int paths:1;		\/* print devnames with "\/dev" prefix *\/$/;"	m	struct:lsblk	file:
+paths	test.c	/^	unsigned int paths:1;		\/* print devnames with "\/dev" prefix *\/$/;"	m	struct:lsblk	file:
+probe_device	lsblk.c	/^static void probe_device(struct blkdev_cxt *cxt)$/;"	f	file:
+probed	lsblk.c	/^	int probed;		\/* already probed *\/$/;"	m	struct:blkdev_cxt	file:
+probed	test.c	/^	int probed;		\/* already probed *\/$/;"	m	struct:blkdev_cxt	file:
+process_blkdev	lsblk.c	/^static int process_blkdev(struct blkdev_cxt *cxt, struct blkdev_cxt *parent,$/;"	f	file:
+process_blkdev	test.c	/^static int process_blkdev(struct blkdev_cxt *cxt, struct blkdev_cxt *parent,$/;"	f	file:
+process_one_device	lsblk.c	/^static int process_one_device(char *devname)$/;"	f	file:
+prog_inv_sh_nm_buf	c.h	/^static char prog_inv_sh_nm_buf[256];$/;"	v
+prog_inv_sh_nm_from_file	c.h	/^prog_inv_sh_nm_from_file(char *f, char stripext)$/;"	f
+program_invocation_short_name	c.h	141;"	d
+program_invocation_short_name	c.h	144;"	d
+program_invocation_short_name	c.h	147;"	d
+reset_blkdev_cxt	lsblk.c	/^static void reset_blkdev_cxt(struct blkdev_cxt *cxt)$/;"	f	file:
+scols_line	lsblk.c	/^	struct libscols_line *scols_line;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::libscols_line	file:
+scols_line	test.c	/^	struct libscols_line *scols_line;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::libscols_line	file:
+scsi	lsblk.c	/^	unsigned int scsi:1;		\/* print only device with HCTL (SCSI) *\/$/;"	m	struct:lsblk	file:
+scsi	test.c	/^	unsigned int scsi:1;		\/* print only device with HCTL (SCSI) *\/$/;"	m	struct:lsblk	file:
+scsi_channel	sysfs.h	/^			scsi_channel,$/;"	m	struct:sysfs_cxt
+scsi_host	sysfs.h	/^	unsigned int	scsi_host,$/;"	m	struct:sysfs_cxt
+scsi_lun	sysfs.h	/^			scsi_lun;$/;"	m	struct:sysfs_cxt
+scsi_target	sysfs.h	/^			scsi_target,$/;"	m	struct:sysfs_cxt
+serial	lsblk.c	/^	char *serial;		\/* disk serial number *\/$/;"	m	struct:blkdev_cxt	file:
+serial	test.c	/^	char *serial;		\/* disk serial number *\/$/;"	m	struct:blkdev_cxt	file:
+set_cxt	lsblk.c	/^static int set_cxt(struct blkdev_cxt *cxt,$/;"	f	file:
+set_scols_data	lsblk.c	/^static void set_scols_data(struct blkdev_cxt *cxt, int col, int id, struct libscols_line *ln)$/;"	f	file:
+set_sortdata_u64	lsblk.c	/^static void set_sortdata_u64(struct libscols_line *ln, int col, uint64_t x)$/;"	f	file:
+set_sortdata_u64_from_string	lsblk.c	/^static void set_sortdata_u64_from_string(struct libscols_line *ln, int col, const char *str)$/;"	f	file:
+size	lsblk.c	/^	uint64_t size;		\/* device size *\/$/;"	m	struct:blkdev_cxt	file:
+size	test.c	/^	uint64_t size;		\/* device size *\/$/;"	m	struct:blkdev_cxt	file:
+sort_col	lsblk.c	/^	struct libscols_column *sort_col;\/* sort output by this column *\/$/;"	m	struct:lsblk	typeref:struct:lsblk::libscols_column	file:
+sort_col	test.c	/^	struct libscols_column *sort_col;\/* sort output by this column *\/$/;"	m	struct:lsblk	typeref:struct:lsblk::libscols_column	file:
+sort_hidden	lsblk.c	/^	unsigned int sort_hidden:1;	\/* sort column not between output columns *\/$/;"	m	struct:lsblk	file:
+sort_hidden	test.c	/^	unsigned int sort_hidden:1;	\/* sort column not between output columns *\/$/;"	m	struct:lsblk	file:
+sort_id	lsblk.c	/^	int sort_id;$/;"	m	struct:lsblk	file:
+sort_id	test.c	/^	int sort_id;$/;"	m	struct:lsblk	file:
+sort_type	lsblk.c	/^	int	sort_type;		\/* SORT_* *\/$/;"	m	struct:colinfo	file:
+st	lsblk.c	/^	struct stat	st;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::stat	file:
+st	test.c	/^	struct stat	st;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::stat	file:
+stringify	c.h	353;"	d
+stringify_value	c.h	352;"	d
+stripoff_last_component	sysfs.c	/^char *stripoff_last_component(char *path)$/;"	f
+swaps	lsblk.c	/^static struct libmnt_table *mtab, *swaps;$/;"	v	typeref:struct:	file:
+sysfs	lsblk.c	/^	struct sysfs_cxt  sysfs;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::sysfs_cxt	file:
+sysfs	test.c	/^	struct sysfs_cxt  sysfs;$/;"	m	struct:blkdev_cxt	typeref:struct:blkdev_cxt::sysfs_cxt	file:
+sysfs_count_dirents	sysfs.c	/^int sysfs_count_dirents(struct sysfs_cxt *cxt, const char *attr)$/;"	f
+sysfs_count_partitions	sysfs.c	/^int sysfs_count_partitions(struct sysfs_cxt *cxt, const char *devname)$/;"	f
+sysfs_cxt	sysfs.h	/^struct sysfs_cxt {$/;"	s
+sysfs_deinit	sysfs.c	/^void sysfs_deinit(struct sysfs_cxt *cxt)$/;"	f
+sysfs_devname_dev_to_sys	sysfs.h	/^static inline void sysfs_devname_dev_to_sys(char *name)$/;"	f
+sysfs_devname_sys_to_dev	sysfs.h	/^static inline void sysfs_devname_sys_to_dev(char *name)$/;"	f
+sysfs_devname_to_devno	sysfs.c	/^dev_t sysfs_devname_to_devno(const char *name, const char *parent)$/;"	f
+sysfs_devno_attribute_path	sysfs.c	/^char *sysfs_devno_attribute_path(dev_t devno, char *buf,$/;"	f
+sysfs_devno_has_attribute	sysfs.c	/^int sysfs_devno_has_attribute(dev_t devno, const char *attr)$/;"	f
+sysfs_devno_is_lvm_private	sysfs.c	/^int sysfs_devno_is_lvm_private(dev_t devno)$/;"	f
+sysfs_devno_is_wholedisk	sysfs.c	/^int sysfs_devno_is_wholedisk(dev_t devno)$/;"	f
+sysfs_devno_path	sysfs.c	/^char *sysfs_devno_path(dev_t devno, char *buf, size_t bufsiz)$/;"	f
+sysfs_devno_to_devpath	sysfs.c	/^char *sysfs_devno_to_devpath(dev_t devno, char *buf, size_t bufsiz)$/;"	f
+sysfs_devno_to_wholedisk	sysfs.c	/^int sysfs_devno_to_wholedisk(dev_t dev, char *diskname,$/;"	f
+sysfs_fopen	sysfs.c	/^static FILE *sysfs_fopen(struct sysfs_cxt *cxt, const char *attr)$/;"	f	file:
+sysfs_get_devchain	sysfs.c	/^char *sysfs_get_devchain(struct sysfs_cxt *cxt, char *buf, size_t bufsz)$/;"	f
+sysfs_get_devname	sysfs.c	/^char *sysfs_get_devname(struct sysfs_cxt *cxt, char *buf, size_t bufsiz)$/;"	f
+sysfs_get_slave	sysfs.c	/^char *sysfs_get_slave(struct sysfs_cxt *cxt)$/;"	f
+sysfs_has_attribute	sysfs.c	/^int sysfs_has_attribute(struct sysfs_cxt *cxt, const char *attr)$/;"	f
+sysfs_init	sysfs.c	/^int sysfs_init(struct sysfs_cxt *cxt, dev_t devno, struct sysfs_cxt *parent)$/;"	f
+sysfs_is_hotpluggable	sysfs.c	/^int sysfs_is_hotpluggable(struct sysfs_cxt *cxt)$/;"	f
+sysfs_is_partition_dirent	sysfs.c	/^int sysfs_is_partition_dirent(DIR *dir, struct dirent *d, const char *parent_name)$/;"	f
+sysfs_next_subsystem	sysfs.c	/^int sysfs_next_subsystem(struct sysfs_cxt *cxt __attribute__((unused)),$/;"	f
+sysfs_open	sysfs.c	/^static int sysfs_open(struct sysfs_cxt *cxt, const char *attr, int flags)$/;"	f	file:
+sysfs_opendir	sysfs.c	/^DIR *sysfs_opendir(struct sysfs_cxt *cxt, const char *attr)$/;"	f
+sysfs_partno_to_devno	sysfs.c	/^dev_t sysfs_partno_to_devno(struct sysfs_cxt *cxt, int partno)$/;"	f
+sysfs_read_int	sysfs.c	/^int sysfs_read_int(struct sysfs_cxt *cxt, const char *attr, int *res)$/;"	f
+sysfs_read_s64	sysfs.c	/^int sysfs_read_s64(struct sysfs_cxt *cxt, const char *attr, int64_t *res)$/;"	f
+sysfs_read_u64	sysfs.c	/^int sysfs_read_u64(struct sysfs_cxt *cxt, const char *attr, uint64_t *res)$/;"	f
+sysfs_readlink	sysfs.c	/^ssize_t sysfs_readlink(struct sysfs_cxt *cxt, const char *attr,$/;"	f
+sysfs_scanf	sysfs.c	/^int sysfs_scanf(struct sysfs_cxt *cxt,  const char *attr, const char *fmt, ...)$/;"	f
+sysfs_scsi_attribute_path	sysfs.c	/^static char *sysfs_scsi_attribute_path(struct sysfs_cxt *cxt,$/;"	f	file:
+sysfs_scsi_get_hctl	sysfs.c	/^int sysfs_scsi_get_hctl(struct sysfs_cxt *cxt, int *h, int *c, int *t, int *l)$/;"	f
+sysfs_scsi_has_attribute	sysfs.c	/^int sysfs_scsi_has_attribute(struct sysfs_cxt *cxt, const char *attr)$/;"	f
+sysfs_scsi_host_attribute_path	sysfs.c	/^static char *sysfs_scsi_host_attribute_path(struct sysfs_cxt *cxt,$/;"	f	file:
+sysfs_scsi_host_is	sysfs.c	/^int sysfs_scsi_host_is(struct sysfs_cxt *cxt, const char *type)$/;"	f
+sysfs_scsi_host_strdup_attribute	sysfs.c	/^char *sysfs_scsi_host_strdup_attribute(struct sysfs_cxt *cxt,$/;"	f
+sysfs_scsi_path_contains	sysfs.c	/^int sysfs_scsi_path_contains(struct sysfs_cxt *cxt, const char *pattern)$/;"	f
+sysfs_stat	sysfs.c	/^int sysfs_stat(struct sysfs_cxt *cxt, const char *attr, struct stat *st)$/;"	f
+sysfs_strdup	sysfs.c	/^char *sysfs_strdup(struct sysfs_cxt *cxt, const char *attr)$/;"	f
+sysfs_write_string	sysfs.c	/^int sysfs_write_string(struct sysfs_cxt *cxt, const char *attr, const char *str)$/;"	f
+sysfs_write_u64	sysfs.c	/^int sysfs_write_u64(struct sysfs_cxt *cxt, const char *attr, uint64_t num)$/;"	f
+table	lsblk.c	/^	struct libscols_table *table;	\/* output table *\/$/;"	m	struct:lsblk	typeref:struct:lsblk::libscols_table	file:
+table	test.c	/^	struct libscols_table *table;	\/* output table *\/$/;"	m	struct:lsblk	typeref:struct:lsblk::libscols_table	file:
+table_parser_errcb	lsblk.c	/^static int table_parser_errcb(struct libmnt_table *tb __attribute__((__unused__)),$/;"	f	file:
+udev	lsblk.c	/^static struct udev *udev;$/;"	v	typeref:struct:udev	file:
+unref_sortdata	lsblk.c	/^static void unref_sortdata(struct libscols_table *tb)$/;"	f	file:
+uuid	lsblk.c	/^	char *uuid;		\/* filesystem UUID (or stack uuid) *\/$/;"	m	struct:blkdev_cxt	file:
+uuid	test.c	/^	char *uuid;		\/* filesystem UUID (or stack uuid) *\/$/;"	m	struct:blkdev_cxt	file:
+warn	c.h	202;"	d
+warnx	c.h	206;"	d
+whint	lsblk.c	/^	double		whint;		\/* width hint (N < 1 is in percent of termwidth) *\/$/;"	m	struct:colinfo	file:
+write_all	sysfs.c	/^static inline int write_all(int fd, const void *buf, size_t count)$/;"	f	file:
+wwn	lsblk.c	/^	char *wwn;		\/* storage WWN *\/$/;"	m	struct:blkdev_cxt	file:
+wwn	test.c	/^	char *wwn;		\/* storage WWN *\/$/;"	m	struct:blkdev_cxt	file:
+xreaddir	lsblk.c	/^static struct dirent *xreaddir(DIR *dp)$/;"	f	file:
+xreaddir	sysfs.c	/^static struct dirent *xreaddir(DIR *dp)$/;"	f	file:
+xusleep	c.h	/^static inline int xusleep(useconds_t usec)$/;"	f

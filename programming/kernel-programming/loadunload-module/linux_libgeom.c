@@ -104,7 +104,14 @@ static int zpool_find_import_blkid(/*libzfs_handle_t *hdl, kmutex_t *lock, avl_t
 		blkid_put_cache(cache);
 		return (EINVAL);
 	}
-
+/*
+        error = blkid_dev_set_search(iter, "TYPE", "zfs_member");
+        if (error != 0) { 
+                blkid_dev_iterate_end(iter);
+                blkid_put_cache(cache);
+                return (error);
+        }
+*/
 	//error = blkid_dev_set_search(iter, "TYPE", "*");
 	//if (error != 0) {
 	//	blkid_dev_iterate_end(iter);
@@ -175,7 +182,8 @@ int main(int argc, char **argv){
 	blkid_dev_iterate_end(iter);
 	blkid_put_cache(cache);
 
-
+#else
+	zpool_find_import_blkid();
 #endif
 
 
