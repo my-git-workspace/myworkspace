@@ -1,1 +1,0 @@
-cmd_/home/msys/myworkspace/device-drivers/testmodule.o := ld -m elf_x86_64   -r -o /home/msys/myworkspace/device-drivers/testmodule.o /home/msys/myworkspace/device-drivers/chr_dev.o /home/msys/myworkspace/device-drivers/init.o 
