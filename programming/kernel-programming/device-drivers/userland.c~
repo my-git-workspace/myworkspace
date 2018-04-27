@@ -34,10 +34,7 @@ int main(int argc, char *argv[]){
  * */
 	lseek(fd,2,SEEK_SET);
 	printf("read: %d\n",(int)read(fd,rbuf,512));
-	printf("rbuf:\n %s\n",rbuf);
-	lseek(fd,2,SEEK_CUR);
-	printf("read: %d\n",(int)read(fd,rbuf,512));
-	printf("rbuf:\n %s\n",rbuf);
+	printf("rbuf: %s\n",rbuf);
 	close(fd);
 	return (0);
 }
