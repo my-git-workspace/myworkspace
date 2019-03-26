@@ -114,6 +114,47 @@ public:
 		cout<<__func__<<endl;
 		cout<<"data: "<<data<<" "<<count<<" occurence."<<endl;
 	}
+	void reverse_list(){
+		cout<<__func__<<endl;
+		node *prev = NULL;
+		node *curr = head_;
+		node *next = NULL;
+		while(curr){
+			next = curr->next_;
+			curr->next_ = prev;
+			prev = curr;
+			curr = next;
+		}
+		head_ = prev;	
+	}
+	void is_loop(){
+		node *r1 = head_;
+		node *r2 = head_->next_;
+		node *r3 = head_->next_->next_;
+		bool isLoop = false;
+		while ( r1 && r2 && r3 ){
+			if ( r1 == r2 || r1==r3 ){
+				isLoop = true;	
+				break;
+			}
+			r1 = r1->next_;
+			r2 = r2->next_;
+			if( r3->next_ )
+				r3 = r3->next_->next_;
+
+		}
+		cout<<__func__<<endl;
+		cout <<"is_loop: "<<isLoop<<endl;
+
+
+	}
+	void makeLoop(){
+		node *curr = head_;
+		while ( curr->next_ ){
+			curr = curr->next_;
+		}
+		curr->next_ = head_->next_;
+	}
 private:	
 	node *head_;
 };
@@ -133,7 +174,11 @@ int main(int argc, char **argv){
 	//l.getnode_n_from_last(0);
 	//l.getnode_n_from_last_using_pointers(1);
 	//l.delete_list_data();
-	l.data_occurences(9);
+	//l.data_occurences(9);
+	//l.reverse_list();
+	//l.makeLoop();
+	l.is_loop();
+	//l.show();
 	//return 
 	return 0;
 }
