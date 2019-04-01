@@ -1,0 +1,7 @@
+/home/msys/private/programming/hello_shared/build/CMakeFiles/install/strip.dir
+/home/msys/private/programming/hello_shared/build/CMakeFiles/edit_cache.dir
+/home/msys/private/programming/hello_shared/build/CMakeFiles/hello.dir
+/home/msys/private/programming/hello_shared/build/CMakeFiles/rebuild_cache.dir
+/home/msys/private/programming/hello_shared/build/CMakeFiles/list_install_components.dir
+/home/msys/private/programming/hello_shared/build/CMakeFiles/install/local.dir
+/home/msys/private/programming/hello_shared/build/CMakeFiles/install.dir

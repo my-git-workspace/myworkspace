@@ -1,0 +1,3 @@
+/home/msys/private/programming/cmake_app/build/CMakeFiles/rebuild_cache.dir
+/home/msys/private/programming/cmake_app/build/CMakeFiles/cmakeapp.dir
+/home/msys/private/programming/cmake_app/build/CMakeFiles/edit_cache.dir

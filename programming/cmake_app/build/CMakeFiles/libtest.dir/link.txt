@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/libtest.dir/src/main.cpp.o  -o libtest  -L/opt/hello -Wl,-rpath,/opt/hello -lhello 
