@@ -1,0 +1,82 @@
+#!/bin/bash
+#This script is only for either c or cpp source file for generatinf makefile
+
+type_of_makefile=$1
+Path_of_directory=$2
+
+#validate commandline present or not
+if [ ! $# -eq 2 ];then
+       echo "Usage:" 
+       echo `basename $0`" [options] <dir path>"
+       echo "Here"	
+       echo "[options] =      -u   \" For user space \" 
+		 -s   \" For shared library \"
+		 -k   \" kernel space \""	
+       echo "<dir path>=\" Dir from where want to generate Makefiles\""
+       exit 0
+fi
+BUILD_DIR='/usr/lib/build'
+if [ ! -d "$BUILD_DIR" ]; then echo "Build directoy not present copy in `dirname $BUILD_DIR` location";exit 0; fi
+
+CFLAGS="-g -Wall"
+#check for command line argument passed is directory or not
+if [[ ! -d $Path_of_directory ]]; then echo "$Path_of_directory is not a Directory"; exit 0; fi
+filename_c=$(find $Path_of_directory -name "*.c" | tr '\n' ' ')
+filename_cpp=$(find $Path_of_directory -name "*.cpp" | tr '\n' ' ')
+#check for the presence of the source file
+if [ "$filename_c" ]
+then
+	SRCS=$filename_c
+elif [ "$filename_cpp" ]
+then
+	SRCS=$filename_cpp
+	CC="g++"
+else
+	echo "No source file is present!"
+fi
+if [ $type_of_makefile == "-u" ]; then 
+	PROG=$(basename `pwd`)
+	MK_FILE="include ${BUILD_DIR}/linux.prog.mk"
+
+	if [ -f  $Path_of_directory/Makefile ];then rm $Path_of_directory/Makefile; fi
+
+	echo "************generating makefile for $Path_of_directory directory********"
+	echo "#LDFLAGS for loader flags; EXTRA_CFLAGS for file inclusion"  >> $Path_of_directory/Makefile
+	echo "#LDADD for linking and loading the library"  >> $Path_of_directory/Makefile
+	echo "SRCS=$SRCS" >> $Path_of_directory/Makefile
+	echo "PROG=$PROG" >>   $Path_of_directory/Makefile
+	echo "CFLAGS=$CFLAGS" >> $Path_of_directory/Makefile 
+	if [ "$filename_cpp" ];then echo "CC= $CC" >> $Path_of_directory/Makefile;fi
+	echo "$MK_FILE" >> $Path_of_directory/Makefile
+elif [ $type_of_makefile == "-k" ]; then 
+	KMOD=$(basename `pwd`)
+	MK_FILE="include ${BUILD_DIR}/linux.kmod.mk"
+
+	if [ -f  $Path_of_directory/Makefile ];then rm $Path_of_directory/Makefile; fi
+
+	echo "************generating makefile for $Path_of_directory directory********"
+	echo "KMOD=$KMOD" >>   $Path_of_directory/Makefile
+	echo "$MK_FILE" >> $Path_of_directory/Makefile
+
+elif [ $type_of_makefile == "-s" ]; then 
+	BIN=$(basename `pwd`)
+	MK_FILE="include ${BUILD_DIR}/linux.lib.mk"
+
+	if [ -f  $Path_of_directory/Makefile ];then rm $Path_of_directory/Makefile; fi
+
+	echo "************generating makefile for $Path_of_directory directory********"
+	echo "#EXTRA_CFLAGS for file inclusion; LDADD for linking and loading the library"  >> $Path_of_directory/Makefile
+	echo "SRCS=$SRCS" >> $Path_of_directory/Makefile
+	echo "LIB=$BIN" >>   $Path_of_directory/Makefile
+	if [ "$filename_cpp" ];then echo "CC= $CC" >> $Path_of_directory/Makefile;fi
+	echo "$MK_FILE" >> $Path_of_directory/Makefile
+else
+       echo "Usage:" 
+       echo `basename $0`" [options] <dir path>"
+       echo "Here"      
+       echo "[options]=       -u   \" For user space\"
+                 -s   \"For shared library\"
+                 -k   \" kernel space\""        
+       echo "<dir path>=\"Dir from where want to generate Makefiles\""
+
+fi

@@ -1,0 +1,2 @@
+debian/sbin/genmake sbin
+debian/usr/lib/build usr/lib

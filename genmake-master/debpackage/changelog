@@ -1,0 +1,5 @@
+genmake (VERSION_TEMPLATE) unstable; urgency=medium
+
+  * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+
+ -- root <root@unknown>  Tue, 11 Sep 2018 14:52:36 +0530
