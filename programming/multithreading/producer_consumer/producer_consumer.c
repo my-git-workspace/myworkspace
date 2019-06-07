@@ -3,67 +3,50 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <semaphore.h>
+#include "queue.h"
 
-#define TOTAL_ELEMENT 20
-#define BUF_SIZE 10
+#define TOTAL_ELEMENT 2000
+#define BUF_SIZE MAX
 int produce_count=0;
 int consumer_count=TOTAL_ELEMENT;
 int buffer[BUF_SIZE];
 int i = 0;
-pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
-sem_t sem_p;
-sem_t sem_c;
+sem_t sem_full;
+sem_t sem_empty;
 
-void *producer(void *param){
-	int static data;
-	while ( produce_count <= TOTAL_ELEMENT - BUF_SIZE ) {
-		//sleep(1);
-		sem_wait(&sem_c);
-		printf("producer\n");
-
-		for (i=0;i<BUF_SIZE;i++){
-			buffer[i]=data++;
-			printf(" %d ", buffer[i]);
-			produce_count++;
-		}	
-
-		sem_post(&sem_p);
-		printf("\n");
+void *produce(void *param){
+	static int data;
+	while ( produce_count < TOTAL_ELEMENT ) {
+		sem_wait(&sem_empty);
+		put(data++);
+		produce_count++;
+		sem_post(&sem_full);
 	}
-	return NULL;
 }
-void *consumer(void *param){
+void *consume(void *param){
 	while ( consumer_count  ) {
-		//sleep(1);
-		sem_wait(&sem_p);
-		printf("consumer\n");
-		for (i=0;i<BUF_SIZE;i++){
-			printf(" %d ", buffer[i]);
-			buffer[i]=0;
-			consumer_count--;
-
-		}	
-		sem_post(&sem_c);
-		printf("\n");
+		sem_wait(&sem_full);
+		get();
+		consumer_count--;
+		sem_post(&sem_empty);
 	}
-	return NULL;
 }
 
 int main(int argc, char **argv){
-	pthread_t th[2];
+	pthread_t producer, consumer;
 	int ret=0;
-	sem_init(&sem_p, 0, 0);
-	sem_init(&sem_c, 0, 1);
-	ret=pthread_create(&th[0], NULL, producer, NULL);
+	sem_init(&sem_full, 0, 0);
+	sem_init(&sem_empty, 0, BUF_SIZE);
+	ret=pthread_create(&producer, NULL, produce, NULL);
 	if( ret ){
 		printf("pthread 1 create failed");	
 	}
-	ret=pthread_create(&th[1], NULL, consumer, NULL);
+	ret=pthread_create(&consumer, NULL, consume, NULL);
 	if( ret ){
 		printf("pthread 2 create failed");	
 	}
-	pthread_join(th[0], NULL);
-	pthread_join(th[1], NULL);
+	pthread_join(producer, NULL);
+	pthread_join(consumer, NULL);
 	//return 
 	return (0);
 }
