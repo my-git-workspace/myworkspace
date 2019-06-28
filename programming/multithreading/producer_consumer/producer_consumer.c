@@ -3,13 +3,16 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <semaphore.h>
+#include <sys/types.h>
+#include <sys/syscall.h>
+
 #include "queue.h"
 #include "atomic.h"
 
-#define TOTAL_ELEMENT 10
+#define TOTAL_ELEMENT 20
 #define BUF_SIZE MAX
 int produce_count=0;
-atomic_t consumer_count=ATOMIC_INIT(TOTAL_ELEMENT + 1);
+atomic_t consumer_count=ATOMIC_INIT(TOTAL_ELEMENT);
 int buffer[BUF_SIZE];
 int i = 0;
 sem_t sem_full;
@@ -19,7 +22,7 @@ void *produce(void *param){
 	static int data;
 	while ( produce_count < TOTAL_ELEMENT ) {
 		sem_wait(&sem_empty);
-		printf("tid %lu: ", pthread_self());
+		printf("tid %ld: ", syscall(__NR_gettid));
 		put(data++);
 		produce_count++;
 		sem_post(&sem_full);
@@ -27,9 +30,9 @@ void *produce(void *param){
 	return NULL;
 }
 void *consume(void *param){
-	while ( atomic_read(&consumer_count) ) {
+	while ( atomic_read(&consumer_count) > 1 ) {
 		sem_wait(&sem_full);
-		printf("tid %lu: ", pthread_self());
+		printf("tid %ld: ", syscall(__NR_gettid));
 		get();
 		atomic_dec(&consumer_count);
 		sem_post(&sem_empty);
