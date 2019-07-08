@@ -1,0 +1,12 @@
+Source: qnapzfs
+Priority: optional
+Maintainer: msys <Qnap@msystechnologies.com>
+Build-Depends: debhelper (>=9)
+Standards-Version: 3.9.6
+Homepage: http://msystechnologies.com
+
+Package: qnapzfs
+Architecture: any
+Multi-Arch: foreign
+Depends: ${shlibs:Depends}, ${misc:Depends}, zlib1g-dev, uuid-dev, libssl-dev, libblkid-dev, chrpath
+Description: qnapzfs-installer

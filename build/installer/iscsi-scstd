@@ -1,0 +1,88 @@
+#!/bin/bash
+#
+# Start/Stop iscsi-scstd daemon
+#
+#
+
+### BEGIN INIT INFO
+# Provides:       iscsi-scstd
+# Required-Start:
+# Required-Stop:
+# Default-Start:  2 3 4 5
+# Default-Stop:   0 1 6
+# Short-Description:iscsi-scstd daemon 
+# Description:    iscsi-scstd daemon
+### END INIT INFO
+
+
+DAEMON_PATH="/sbin/iscsi-scstd"
+DAEMON="iscsi-scstd"
+
+
+# ----------------------------------------------------------------------------
+f_start() {
+  local pids=$(pidof $DAEMON)
+  if [ "$pids" ]; then
+    echo "$DAEMON is running: PID: $pids"
+    exit 1
+  fi
+
+	echo "Starting $DAEMON "
+	$DAEMON_PATH &
+}
+
+# ----------------------------------------------------------------------------
+
+f_stop() {
+	echo "Stopping $DAEMON "
+	if [ $(pidof $DAEMON) ]; then
+        kill -9 $(pidof $DAEMON) > /dev/null   #Stop Daemon
+        fi
+}
+
+# ----------------------------------------------------------------------------
+f_restart() {
+	f_stop
+	f_start
+}
+# ----------------------------------------------------------------------------
+
+f_status() {
+  local pids=$(pidof $DAEMON)
+  if [ "$pids" ]; then
+    echo "$DAEMON is running: PID: $pids"
+  else
+    echo "$DAEMON is not running"
+  fi
+}
+
+# ----------------------------------------------------------------------------
+
+
+case "$1" in
+  start)
+    echo "Starting $SERVICE_NAME"
+    f_start
+    ;;
+  stop)
+    echo "Stopping $SERVICE_NAME"
+    f_stop
+    ;;
+  restart)
+    echo "Stopping $SERVICE_NAME"
+    f_stop
+    echo "Starting $SERVICE_NAME"
+    f_start
+    ;;
+  status)
+    f_status
+    ;;
+  version)
+    f_version
+    ;;
+  *)
+    echo "Usage: $0 {start|stop|restart|status|version}"
+    exit 1
+esac
+exit 0
+

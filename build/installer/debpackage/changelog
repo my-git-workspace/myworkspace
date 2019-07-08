@@ -1,0 +1,5 @@
+qnapzfs (VERSION_TEMPLATE) stable; urgency=medium
+
+  * Initial release (Closes: #0)  
+
+ -- msys <Qnap@msystechnologies.com>  Fri, 27 Oct 2017 17:51:58 +0530

@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: qnapzfs
+Source: <url://example.com>
+
+Files: debian/*
+Copyright: 2017 Msys <Qnap@msystechnologies.com>
+License: <special license>
+ <Put the license of the package here indented by 1 space>
+ <This follows the format of Description: lines in control file>
+ 
