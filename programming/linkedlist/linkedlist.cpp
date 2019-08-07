@@ -1,5 +1,10 @@
 #include <iostream>
 using namespace std;
+
+
+//input 1 2 3 4 5
+//stack 5 4 3 2 1
+//queue 1 2 3 4 5
 class node{
 	public:
 	node( node *next = NULL, int data = 0 ){
@@ -12,17 +17,27 @@ class node{
 
 class list {
 public:
-	list() {
+	list(bool isStack = false ) {
 		head_ = NULL;
+		isStack_ = isStack;
 	}
 	
 	void insert(int data){
+		cout << "insert: " <<data<<endl;
 		node *n = new node( NULL, data);
-		if(!head_){
+		if (!head_) {
 			head_ = n;
-		}else{
-			n->next_ = head_;
-			head_ = n;
+		} else {
+			if ( isStack_ ){
+			   n->next_ = head_;
+			   head_ = n;
+			} else {
+				node *tmp=head_;		
+				while ( tmp->next_ ) {
+					tmp = tmp->next_;
+				}	
+				tmp->next_=n;	
+			}
 		}	
 
 
@@ -157,16 +172,16 @@ public:
 	}
 private:	
 	node *head_;
+	bool isStack_;
 };
 
 int main(int argc, char **argv){
-	list l;
+	bool isStack_ = false;
+	list l( isStack_ );
 
-	for ( int i = 5; i >0 ; i-- ) {
+	for ( int i = 1; i < 6 ; i++ ) {
 		l.insert(i);
 	}
-	l.insert(1);
-	l.insert(3);
 	l.show();
 	
 	//l.mid_of_list();
@@ -177,7 +192,7 @@ int main(int argc, char **argv){
 	//l.data_occurences(9);
 	//l.reverse_list();
 	//l.makeLoop();
-	l.is_loop();
+	//l.is_loop();
 	//l.show();
 	//return 
 	return 0;
