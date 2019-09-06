@@ -1,20 +1,37 @@
 #include <stdio.h>
-
-#include <stdlib.h>
 #include <string.h>
+#include <String.h>
 
 int strLen(const char *str) {
 	int len=0;
-	while(*str++)
+	while(*(str+len))
 		len++;
-	printf("strLen(%s):%d\n", str-len-1, len);
 	return len;
 }
 
-#define IS_CHAR_SPACE(c) (c==' ')
-#define IS_CHAR_NULLTERM(c) (c=='\0')
+int strCpy( const char *src, char *dest ) {
+	int ind=0;	
+	while( *(dest +ind)=*(src+ind) ) ind++;
+	
+	*(dest+ind)='\0';
+	return 0;
+}
 
-int maxLengthEvenWord(const char *string, char *maxEvenLengthWord) {
+int word( const char *src, char *buf ) {
+	int ind = 0;
+	while ( *(src + ind) ){
+		if( IS_CHAR_SPACE(*(src+ind)) ){
+			break;
+		}		
+		buf[ind]=*(src+ind);
+		ind++;
+	}	
+	buf[ind]='\0';
+	return ind;
+}
+
+
+int maxLengthEvenWord( const char *string, char *maxEvenLengthWord ) {
 	char c='\0';
 	char wordBegin=0;
 	int maxEvenLen=0;
@@ -41,12 +58,16 @@ int maxLengthEvenWord(const char *string, char *maxEvenLengthWord) {
 		}	
 		i++;
 	}
-	printf("maxLengthEvenWord(\"%s\") = \"%s\"\n", string,maxEvenLengthWord);
+	printf("maxLengthEvenWord(\"%s\") = \"%s\"\n", string, maxEvenLengthWord );
 	return charCount;
 }
 
-int main(int argc, char **argv){
-	char buf[32];
-	maxLengthEvenWord("Hello Hi 12345678 hell", buf);
+int main (int argc, char **argv) {
+	//char buf[32];
+	const char *str="12345678";
+	//maxLengthEvenWord("Hello Hi 12345678 hell", buf);
+	//int len=word(str, buf);
+	//len=word(str+len+1, buf);
+	smallestLargestWordFromString(str);
 	return 0;
 }
