@@ -192,5 +192,14 @@ int main(int argc, char **argv){
 	res.head(temp);
 	res.show();
 
+	node *curr=res.head();
+	node *prev=NULL;
+	node *next=NULL;
+	reverseList(&curr,&prev,&next);
+
+	list rev;
+	rev.head(curr);
+	rev.show();
+		
 	return 0;
 }

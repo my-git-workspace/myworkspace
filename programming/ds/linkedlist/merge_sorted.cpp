@@ -58,3 +58,15 @@ int mergeSortedLists ( node *a, node *b, node **result ){
 	mergeSortedLists(a,b,result);
 	return 0;
 }
+int reverseList(node **curr, node **prev, node **next){
+
+	if( *curr ){
+		*next=((*curr)->next_);
+		((*curr)->next_) = *prev;
+		*prev=*curr;
+		*curr=*next;
+		reverseList(curr,prev,next);
+	}
+	*curr=*prev;
+	return 0;
+}

@@ -36,6 +36,8 @@ private:
 };
 
 int mergeSortedLists(list &a, list &b, list &result);
-int mergeSortedLists ( node *a, node *b, node **result );
+int mergeSortedLists ( node *a, node *b, node **result ); //recursive
+int reverseList(node **curr, node **prev, node **next);
+
 
 #endif
